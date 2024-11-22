@@ -1,0 +1,1172 @@
+2024-11-21 18:43:50,610:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-21 18:43:50,610:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-21 18:43:50,610:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-21 18:43:50,610:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-21 18:43:52,987:INFO:PyCaret ClassificationExperiment
+2024-11-21 18:43:52,987:INFO:Logging name: clf-default-name
+2024-11-21 18:43:52,987:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-11-21 18:43:52,987:INFO:version 3.3.2
+2024-11-21 18:43:52,987:INFO:Initializing setup()
+2024-11-21 18:43:52,987:INFO:self.USI: ee64
+2024-11-21 18:43:52,987:INFO:self._variable_keys: {'fix_imbalance', 'log_plots_param', 'is_multiclass', 'data', '_ml_usecase', 'pipeline', 'logging_param', 'y_test', 'target_param', 'html_param', 'n_jobs_param', 'exp_name_log', 'y_train', 'idx', 'USI', 'exp_id', 'memory', 'y', 'gpu_n_jobs_param', '_available_plots', 'X_test', 'X', 'seed', 'gpu_param', 'fold_shuffle_param', 'fold_groups_param', 'fold_generator', 'X_train'}
+2024-11-21 18:43:52,987:INFO:Checking environment
+2024-11-21 18:43:52,987:INFO:python_version: 3.10.12
+2024-11-21 18:43:52,988:INFO:python_build: ('main', 'Nov  6 2024 20:22:13')
+2024-11-21 18:43:52,988:INFO:machine: x86_64
+2024-11-21 18:43:52,988:INFO:platform: Linux-6.1.85+-x86_64-with-glibc2.35
+2024-11-21 18:43:52,988:INFO:Memory: svmem(total=13609431040, available=11757367296, percent=13.6, used=1514987520, free=7524855808, active=1194409984, inactive=4428406784, buffers=548646912, cached=4020940800, shared=3674112, slab=364593152)
+2024-11-21 18:43:52,988:INFO:Physical Core: 1
+2024-11-21 18:43:52,988:INFO:Logical Core: 2
+2024-11-21 18:43:52,988:INFO:Checking libraries
+2024-11-21 18:43:52,988:INFO:System:
+2024-11-21 18:43:52,988:INFO:    python: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
+2024-11-21 18:43:52,988:INFO:executable: /usr/bin/python3
+2024-11-21 18:43:52,988:INFO:   machine: Linux-6.1.85+-x86_64-with-glibc2.35
+2024-11-21 18:43:52,988:INFO:PyCaret required dependencies:
+2024-11-21 18:43:53,771:WARNING:/usr/local/lib/python3.10/dist-packages/dask/dataframe/__init__.py:42: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-11-21 18:43:53,993:INFO:                 pip: 24.1.2
+2024-11-21 18:43:53,993:INFO:          setuptools: 75.1.0
+2024-11-21 18:43:53,993:INFO:             pycaret: 3.3.2
+2024-11-21 18:43:53,993:INFO:             IPython: 7.34.0
+2024-11-21 18:43:53,993:INFO:          ipywidgets: 7.7.1
+2024-11-21 18:43:53,993:INFO:                tqdm: 4.66.6
+2024-11-21 18:43:53,993:INFO:               numpy: 1.26.4
+2024-11-21 18:43:53,993:INFO:              pandas: 2.1.4
+2024-11-21 18:43:53,993:INFO:              jinja2: 3.1.4
+2024-11-21 18:43:53,993:INFO:               scipy: 1.11.4
+2024-11-21 18:43:53,993:INFO:              joblib: 1.3.2
+2024-11-21 18:43:53,993:INFO:             sklearn: 1.4.2
+2024-11-21 18:43:53,993:INFO:                pyod: 2.0.2
+2024-11-21 18:43:53,993:INFO:            imblearn: 0.12.4
+2024-11-21 18:43:53,993:INFO:   category_encoders: 2.6.4
+2024-11-21 18:43:53,993:INFO:            lightgbm: 4.5.0
+2024-11-21 18:43:53,993:INFO:               numba: 0.60.0
+2024-11-21 18:43:53,993:INFO:            requests: 2.32.3
+2024-11-21 18:43:53,993:INFO:          matplotlib: 3.7.5
+2024-11-21 18:43:53,993:INFO:          scikitplot: 0.3.7
+2024-11-21 18:43:53,993:INFO:         yellowbrick: 1.5
+2024-11-21 18:43:53,993:INFO:              plotly: 5.24.1
+2024-11-21 18:43:53,993:INFO:    plotly-resampler: Not installed
+2024-11-21 18:43:53,993:INFO:             kaleido: 0.2.1
+2024-11-21 18:43:53,993:INFO:           schemdraw: 0.15
+2024-11-21 18:43:53,993:INFO:         statsmodels: 0.14.4
+2024-11-21 18:43:53,993:INFO:              sktime: 0.26.0
+2024-11-21 18:43:53,994:INFO:               tbats: 1.1.3
+2024-11-21 18:43:53,994:INFO:            pmdarima: 2.0.4
+2024-11-21 18:43:53,994:INFO:              psutil: 5.9.5
+2024-11-21 18:43:53,994:INFO:          markupsafe: 3.0.2
+2024-11-21 18:43:53,994:INFO:             pickle5: Not installed
+2024-11-21 18:43:53,994:INFO:         cloudpickle: 3.1.0
+2024-11-21 18:43:53,994:INFO:         deprecation: 2.1.0
+2024-11-21 18:43:53,994:INFO:              xxhash: 3.5.0
+2024-11-21 18:43:53,994:INFO:           wurlitzer: 3.1.1
+2024-11-21 18:43:53,994:INFO:PyCaret optional dependencies:
+2024-11-21 18:43:54,307:INFO:                shap: 0.46.0
+2024-11-21 18:43:54,307:INFO:           interpret: Not installed
+2024-11-21 18:43:54,307:INFO:                umap: Not installed
+2024-11-21 18:43:54,307:INFO:     ydata_profiling: Not installed
+2024-11-21 18:43:54,307:INFO:  explainerdashboard: Not installed
+2024-11-21 18:43:54,307:INFO:             autoviz: Not installed
+2024-11-21 18:43:54,307:INFO:           fairlearn: Not installed
+2024-11-21 18:43:54,307:INFO:          deepchecks: Not installed
+2024-11-21 18:43:54,307:INFO:             xgboost: 2.1.2
+2024-11-21 18:43:54,307:INFO:            catboost: Not installed
+2024-11-21 18:43:54,307:INFO:              kmodes: Not installed
+2024-11-21 18:43:54,308:INFO:             mlxtend: 0.23.3
+2024-11-21 18:43:54,308:INFO:       statsforecast: Not installed
+2024-11-21 18:43:54,308:INFO:        tune_sklearn: Not installed
+2024-11-21 18:43:54,308:INFO:                 ray: Not installed
+2024-11-21 18:43:54,308:INFO:            hyperopt: 0.2.7
+2024-11-21 18:43:54,308:INFO:              optuna: Not installed
+2024-11-21 18:43:54,308:INFO:               skopt: Not installed
+2024-11-21 18:43:54,308:INFO:              mlflow: Not installed
+2024-11-21 18:43:54,308:INFO:              gradio: Not installed
+2024-11-21 18:43:54,308:INFO:             fastapi: Not installed
+2024-11-21 18:43:54,308:INFO:             uvicorn: Not installed
+2024-11-21 18:43:54,308:INFO:              m2cgen: Not installed
+2024-11-21 18:43:54,308:INFO:           evidently: Not installed
+2024-11-21 18:43:54,308:INFO:               fugue: Not installed
+2024-11-21 18:43:54,308:INFO:           streamlit: Not installed
+2024-11-21 18:43:54,308:INFO:             prophet: 1.1.6
+2024-11-21 18:43:54,308:INFO:None
+2024-11-21 18:43:54,308:INFO:Set up data.
+2024-11-21 18:43:54,335:INFO:Set up folding strategy.
+2024-11-21 18:43:54,335:INFO:Set up train/test split.
+2024-11-21 18:43:54,352:INFO:Set up index.
+2024-11-21 18:43:54,353:INFO:Assigning column types.
+2024-11-21 18:43:54,361:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-11-21 18:43:54,398:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,401:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,430:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,432:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,469:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,470:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,506:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,508:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,509:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-11-21 18:43:54,547:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,571:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,574:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,612:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-11-21 18:43:54,639:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,642:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,642:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-11-21 18:43:54,702:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,704:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,765:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:54,768:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:54,769:INFO:Preparing preprocessing pipeline...
+2024-11-21 18:43:54,772:INFO:Set up date feature engineering.
+2024-11-21 18:43:54,772:INFO:Set up simple imputation.
+2024-11-21 18:43:54,780:INFO:Set up encoding of ordinal features.
+2024-11-21 18:43:54,787:INFO:Set up encoding of categorical features.
+2024-11-21 18:43:54,787:INFO:Set up removing outliers.
+2024-11-21 18:43:54,787:INFO:Set up imbalanced handling.
+2024-11-21 18:43:54,787:INFO:Set up column transformation.
+2024-11-21 18:43:54,787:INFO:Set up feature normalization.
+2024-11-21 18:43:54,787:INFO:Set up PCA.
+2024-11-21 18:43:56,007:INFO:Finished creating preprocessing pipeline.
+2024-11-21 18:43:56,059:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False)
+2024-11-21 18:43:56,059:INFO:Creating final display dataframe.
+2024-11-21 18:43:57,755:INFO:Setup _display_container:                     Description             Value
+0                    Session id              7146
+1                        Target               mau
+2                   Target type            Binary
+3           Original data shape       (36175, 16)
+4        Transformed data shape        (55897, 6)
+5   Transformed train set shape        (45044, 6)
+6    Transformed test set shape        (10853, 6)
+7              Numeric features                 7
+8                 Date features                 1
+9          Categorical features                 7
+10     Rows with missing values             18.3%
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17              Remove outliers              True
+18           Outliers threshold              0.05
+19                Fix imbalance              True
+20         Fix imbalance method             SMOTE
+21               Transformation              True
+22        Transformation method          quantile
+23                    Normalize              True
+24             Normalize method            zscore
+25                          PCA              True
+26                   PCA method            linear
+27               PCA components                 5
+28               Fold Generator   StratifiedKFold
+29                  Fold Number                10
+30                     CPU Jobs                -1
+31                      Use GPU             False
+32               Log Experiment             False
+33              Experiment Name  clf-default-name
+34                          USI              ee64
+2024-11-21 18:43:57,833:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:57,835:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:57,898:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:57,900:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:57,902:INFO:setup() successfully completed in 4.92s...............
+2024-11-21 18:43:57,902:INFO:gpu_param set to False
+2024-11-21 18:43:57,967:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:57,969:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:58,037:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-11-21 18:43:58,039:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-11-21 18:43:58,064:INFO:Initializing create_model()
+2024-11-21 18:43:58,064:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-11-21 18:43:58,064:INFO:Checking exceptions
+2024-11-21 18:43:58,101:INFO:Importing libraries
+2024-11-21 18:43:58,101:INFO:Copying training dataset
+2024-11-21 18:43:58,137:INFO:Defining folds
+2024-11-21 18:43:58,137:INFO:Declaring metric variables
+2024-11-21 18:43:58,144:INFO:Importing untrained model
+2024-11-21 18:43:58,153:INFO:Light Gradient Boosting Machine Imported successfully
+2024-11-21 18:43:58,172:INFO:Starting cross validation
+2024-11-21 18:43:58,185:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-11-21 18:44:01,231:WARNING:/usr/local/lib/python3.10/dist-packages/dask/dataframe/__init__.py:42: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-11-21 18:44:01,305:WARNING:/usr/local/lib/python3.10/dist-packages/dask/dataframe/__init__.py:42: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-11-21 18:44:24,417:INFO:Calculating mean and std
+2024-11-21 18:44:24,423:INFO:Creating metrics dataframe
+2024-11-21 18:44:24,442:INFO:Finalizing model
+2024-11-21 18:44:25,776:INFO:[LightGBM] [Info] Number of positive: 22522, number of negative: 22522
+2024-11-21 18:44:25,807:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.029637 seconds.
+2024-11-21 18:44:25,807:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-11-21 18:44:25,807:INFO:[LightGBM] [Info] Total Bins 1275
+2024-11-21 18:44:25,807:INFO:[LightGBM] [Info] Number of data points in the train set: 45044, number of used features: 5
+2024-11-21 18:44:25,808:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2024-11-21 18:44:26,041:INFO:Uploading results into container
+2024-11-21 18:44:26,042:INFO:Uploading model into container now
+2024-11-21 18:44:26,056:INFO:_master_model_container: 1
+2024-11-21 18:44:26,057:INFO:_display_container: 2
+2024-11-21 18:44:26,057:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-11-21 18:44:26,057:INFO:create_model() successfully completed......................................
+2024-11-21 18:44:36,604:INFO:Initializing tune_model()
+2024-11-21 18:44:36,604:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>)
+2024-11-21 18:44:36,604:INFO:Checking exceptions
+2024-11-21 18:44:36,728:INFO:Copying training dataset
+2024-11-21 18:44:36,747:INFO:Checking base model
+2024-11-21 18:44:36,748:INFO:Base model : Light Gradient Boosting Machine
+2024-11-21 18:44:36,761:INFO:Declaring metric variables
+2024-11-21 18:44:36,812:INFO:Defining Hyperparameters
+2024-11-21 18:44:37,339:INFO:Tuning with n_jobs=-1
+2024-11-21 18:44:37,339:INFO:Initializing RandomizedSearchCV
+2024-11-21 18:53:51,110:INFO:best_params: {'actual_estimator__reg_lambda': 0.2, 'actual_estimator__reg_alpha': 10, 'actual_estimator__num_leaves': 200, 'actual_estimator__n_estimators': 210, 'actual_estimator__min_split_gain': 0.6, 'actual_estimator__min_child_samples': 36, 'actual_estimator__learning_rate': 0.5, 'actual_estimator__feature_fraction': 0.8, 'actual_estimator__bagging_freq': 4, 'actual_estimator__bagging_fraction': 0.5}
+2024-11-21 18:53:51,111:INFO:Hyperparameter search completed
+2024-11-21 18:53:51,112:INFO:SubProcess create_model() called ==================================
+2024-11-21 18:53:51,112:INFO:Initializing create_model()
+2024-11-21 18:53:51,112:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7e15280be350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.2, 'reg_alpha': 10, 'num_leaves': 200, 'n_estimators': 210, 'min_split_gain': 0.6, 'min_child_samples': 36, 'learning_rate': 0.5, 'feature_fraction': 0.8, 'bagging_freq': 4, 'bagging_fraction': 0.5})
+2024-11-21 18:53:51,112:INFO:Checking exceptions
+2024-11-21 18:53:51,113:INFO:Importing libraries
+2024-11-21 18:53:51,113:INFO:Copying training dataset
+2024-11-21 18:53:51,138:INFO:Defining folds
+2024-11-21 18:53:51,138:INFO:Declaring metric variables
+2024-11-21 18:53:51,147:INFO:Importing untrained model
+2024-11-21 18:53:51,147:INFO:Declaring custom model
+2024-11-21 18:53:51,158:INFO:Light Gradient Boosting Machine Imported successfully
+2024-11-21 18:53:51,180:INFO:Starting cross validation
+2024-11-21 18:53:51,195:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-11-21 18:54:21,542:INFO:Calculating mean and std
+2024-11-21 18:54:21,544:INFO:Creating metrics dataframe
+2024-11-21 18:54:21,559:INFO:Finalizing model
+2024-11-21 18:54:22,639:INFO:[LightGBM] [Warning] bagging_freq is set=4, subsample_freq=0 will be ignored. Current value: bagging_freq=4
+2024-11-21 18:54:22,639:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2024-11-21 18:54:22,639:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2024-11-21 18:54:22,728:INFO:[LightGBM] [Warning] bagging_freq is set=4, subsample_freq=0 will be ignored. Current value: bagging_freq=4
+2024-11-21 18:54:22,728:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2024-11-21 18:54:22,728:INFO:[LightGBM] [Warning] bagging_fraction is set=0.5, subsample=1.0 will be ignored. Current value: bagging_fraction=0.5
+2024-11-21 18:54:22,735:INFO:[LightGBM] [Info] Number of positive: 22522, number of negative: 22522
+2024-11-21 18:54:22,737:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001547 seconds.
+2024-11-21 18:54:22,737:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-11-21 18:54:22,737:INFO:[LightGBM] [Info] Total Bins 1275
+2024-11-21 18:54:22,738:INFO:[LightGBM] [Info] Number of data points in the train set: 45044, number of used features: 5
+2024-11-21 18:54:22,739:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2024-11-21 18:54:22,741:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,747:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,765:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,769:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,774:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,778:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,783:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,787:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,791:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,795:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,799:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,802:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,805:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,808:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,812:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,814:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,816:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,818:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,824:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,828:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,828:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,828:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,828:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,829:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,829:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,830:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,830:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,830:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,830:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,831:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,831:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,832:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,832:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,833:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,833:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,833:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,833:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,834:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,834:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,835:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,835:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,835:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,835:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,836:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,836:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,837:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,837:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,838:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,838:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,838:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,838:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,839:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,839:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,840:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,840:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,840:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,840:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,841:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,841:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,842:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,842:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,842:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,843:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,843:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,843:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,844:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,844:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,845:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,845:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,845:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,846:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,847:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,847:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,848:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,848:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,849:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,849:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,849:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,849:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,850:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,850:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,851:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,851:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,851:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,851:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,852:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,852:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,853:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,853:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,854:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,854:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,854:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,854:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,855:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,855:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,856:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,856:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,856:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,856:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,857:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,857:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,858:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,858:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,858:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,859:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,859:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,859:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,860:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,860:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,861:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,861:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,861:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,861:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,862:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,862:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,863:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,863:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,863:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,863:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,864:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,864:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,865:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,865:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,865:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,865:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,866:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,866:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,867:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,867:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,867:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,868:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,868:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,868:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,869:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,869:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,870:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,870:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,870:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,870:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,871:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,872:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,872:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,873:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,873:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,878:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,879:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,879:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,880:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,881:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,882:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,882:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,882:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,883:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,884:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,885:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,885:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,886:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,886:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,887:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,887:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,887:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,887:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,888:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,888:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,889:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,889:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,889:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,889:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,890:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,890:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,891:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,891:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,891:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,891:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,892:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,892:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,893:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,893:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,894:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,894:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,894:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,894:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,895:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,895:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,896:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,896:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,896:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,896:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,897:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,897:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,898:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,898:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,899:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,899:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,899:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,899:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,900:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,900:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,901:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,901:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,901:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,902:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,902:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,902:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,903:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,903:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,904:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,904:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,905:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,905:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,905:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,905:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,906:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,906:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,907:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,907:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,907:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,907:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,908:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,908:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,909:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,909:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,909:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,910:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,910:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,910:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,911:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,911:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,912:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,912:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,913:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,914:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,914:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,915:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,916:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,916:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,917:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,918:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,918:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,921:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,921:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,922:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,922:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,923:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,923:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,923:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,924:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,924:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,924:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,925:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,925:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,926:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,926:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,926:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,926:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,927:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,927:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,928:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,928:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,928:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,928:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,929:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,929:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,930:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,930:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,930:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,931:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,931:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,931:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,932:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,932:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,933:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,933:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,934:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,935:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,935:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,936:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,938:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,939:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,939:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,941:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,941:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,942:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,942:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,943:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,943:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,944:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,944:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,945:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,945:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,946:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,947:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,948:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,948:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,950:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,951:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,951:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,952:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,952:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,954:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,955:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,955:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,956:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,956:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,957:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,958:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,959:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,960:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-11-21 18:54:22,960:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-11-21 18:54:22,979:INFO:Uploading results into container
+2024-11-21 18:54:22,980:INFO:Uploading model into container now
+2024-11-21 18:54:22,981:INFO:_master_model_container: 2
+2024-11-21 18:54:22,981:INFO:_display_container: 3
+2024-11-21 18:54:22,982:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=4, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.5, max_depth=-1,
+               min_child_samples=36, min_child_weight=0.001, min_split_gain=0.6,
+               n_estimators=210, n_jobs=-1, num_leaves=200, objective=None,
+               random_state=7146, reg_alpha=10, reg_lambda=0.2, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-11-21 18:54:22,982:INFO:create_model() successfully completed......................................
+2024-11-21 18:54:23,171:INFO:SubProcess create_model() end ==================================
+2024-11-21 18:54:23,171:INFO:choose_better activated
+2024-11-21 18:54:23,178:INFO:SubProcess create_model() called ==================================
+2024-11-21 18:54:23,179:INFO:Initializing create_model()
+2024-11-21 18:54:23,179:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-11-21 18:54:23,179:INFO:Checking exceptions
+2024-11-21 18:54:23,181:INFO:Importing libraries
+2024-11-21 18:54:23,181:INFO:Copying training dataset
+2024-11-21 18:54:23,197:INFO:Defining folds
+2024-11-21 18:54:23,197:INFO:Declaring metric variables
+2024-11-21 18:54:23,197:INFO:Importing untrained model
+2024-11-21 18:54:23,197:INFO:Declaring custom model
+2024-11-21 18:54:23,198:INFO:Light Gradient Boosting Machine Imported successfully
+2024-11-21 18:54:23,198:INFO:Starting cross validation
+2024-11-21 18:54:23,207:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-11-21 18:54:43,613:INFO:Calculating mean and std
+2024-11-21 18:54:43,614:INFO:Creating metrics dataframe
+2024-11-21 18:54:43,617:INFO:Finalizing model
+2024-11-21 18:54:45,334:INFO:[LightGBM] [Info] Number of positive: 22522, number of negative: 22522
+2024-11-21 18:54:45,386:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.051880 seconds.
+2024-11-21 18:54:45,386:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-11-21 18:54:45,386:INFO:[LightGBM] [Info] Total Bins 1275
+2024-11-21 18:54:45,399:INFO:[LightGBM] [Info] Number of data points in the train set: 45044, number of used features: 5
+2024-11-21 18:54:45,401:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2024-11-21 18:54:45,789:INFO:Uploading results into container
+2024-11-21 18:54:45,790:INFO:Uploading model into container now
+2024-11-21 18:54:45,791:INFO:_master_model_container: 3
+2024-11-21 18:54:45,791:INFO:_display_container: 4
+2024-11-21 18:54:45,792:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-11-21 18:54:45,792:INFO:create_model() successfully completed......................................
+2024-11-21 18:54:46,083:INFO:SubProcess create_model() end ==================================
+2024-11-21 18:54:46,085:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for AUC is 0.88
+2024-11-21 18:54:46,086:INFO:LGBMClassifier(bagging_fraction=0.5, bagging_freq=4, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.5, max_depth=-1,
+               min_child_samples=36, min_child_weight=0.001, min_split_gain=0.6,
+               n_estimators=210, n_jobs=-1, num_leaves=200, objective=None,
+               random_state=7146, reg_alpha=10, reg_lambda=0.2, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for AUC is 0.878
+2024-11-21 18:54:46,086:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) is best model
+2024-11-21 18:54:46,086:INFO:choose_better completed
+2024-11-21 18:54:46,086:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2024-11-21 18:54:46,101:INFO:_master_model_container: 3
+2024-11-21 18:54:46,102:INFO:_display_container: 3
+2024-11-21 18:54:46,102:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-11-21 18:54:46,102:INFO:tune_model() successfully completed......................................
+2024-11-21 18:54:46,410:INFO:Initializing plot_model()
+2024-11-21 18:54:46,411:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, system=True)
+2024-11-21 18:54:46,411:INFO:Checking exceptions
+2024-11-21 18:54:46,424:INFO:Preloading libraries
+2024-11-21 18:54:46,434:INFO:Copying training dataset
+2024-11-21 18:54:46,435:INFO:Plot type: auc
+2024-11-21 18:54:46,806:INFO:Fitting Model
+2024-11-21 18:54:46,809:INFO:Scoring test/hold-out set
+2024-11-21 18:54:47,164:INFO:Visual Rendered Successfully
+2024-11-21 18:54:47,349:INFO:plot_model() successfully completed......................................
+2024-11-21 18:54:47,356:INFO:Initializing plot_model()
+2024-11-21 18:54:47,356:INFO:plot_model(plot=pr, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, system=True)
+2024-11-21 18:54:47,357:INFO:Checking exceptions
+2024-11-21 18:54:47,366:INFO:Preloading libraries
+2024-11-21 18:54:47,373:INFO:Copying training dataset
+2024-11-21 18:54:47,373:INFO:Plot type: pr
+2024-11-21 18:54:47,705:INFO:Fitting Model
+2024-11-21 18:54:47,709:INFO:Scoring test/hold-out set
+2024-11-21 18:54:48,009:INFO:Visual Rendered Successfully
+2024-11-21 18:54:48,304:INFO:plot_model() successfully completed......................................
+2024-11-21 18:54:48,324:INFO:Initializing plot_model()
+2024-11-21 18:54:48,324:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, system=True)
+2024-11-21 18:54:48,327:INFO:Checking exceptions
+2024-11-21 18:54:48,339:INFO:Preloading libraries
+2024-11-21 18:54:48,350:INFO:Copying training dataset
+2024-11-21 18:54:48,350:INFO:Plot type: feature
+2024-11-21 18:54:48,351:WARNING:No coef_ found. Trying feature_importances_
+2024-11-21 18:54:48,620:INFO:Visual Rendered Successfully
+2024-11-21 18:54:48,923:INFO:plot_model() successfully completed......................................
+2024-11-21 18:54:48,931:INFO:Initializing plot_model()
+2024-11-21 18:54:48,931:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, system=True)
+2024-11-21 18:54:48,931:INFO:Checking exceptions
+2024-11-21 18:54:48,941:INFO:Preloading libraries
+2024-11-21 18:54:48,948:INFO:Copying training dataset
+2024-11-21 18:54:48,948:INFO:Plot type: confusion_matrix
+2024-11-21 18:54:49,241:INFO:Fitting Model
+2024-11-21 18:54:49,243:INFO:Scoring test/hold-out set
+2024-11-21 18:54:49,447:INFO:Visual Rendered Successfully
+2024-11-21 18:54:49,634:INFO:plot_model() successfully completed......................................
+2024-11-21 18:54:49,644:INFO:Initializing predict_model()
+2024-11-21 18:54:49,645:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e151bb967a0>)
+2024-11-21 18:54:49,645:INFO:Checking exceptions
+2024-11-21 18:54:49,645:INFO:Preloading libraries
+2024-11-21 18:54:50,266:INFO:Initializing finalize_model()
+2024-11-21 18:54:50,266:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-11-21 18:54:50,267:INFO:Finalizing LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-11-21 18:54:50,280:INFO:Initializing create_model()
+2024-11-21 18:54:50,280:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-11-21 18:54:50,280:INFO:Checking exceptions
+2024-11-21 18:54:50,282:INFO:Importing libraries
+2024-11-21 18:54:50,282:INFO:Copying training dataset
+2024-11-21 18:54:50,283:INFO:Defining folds
+2024-11-21 18:54:50,283:INFO:Declaring metric variables
+2024-11-21 18:54:50,283:INFO:Importing untrained model
+2024-11-21 18:54:50,283:INFO:Declaring custom model
+2024-11-21 18:54:50,284:INFO:Light Gradient Boosting Machine Imported successfully
+2024-11-21 18:54:50,293:INFO:Cross validation set to False
+2024-11-21 18:54:50,293:INFO:Fitting Model
+2024-11-21 18:54:51,958:INFO:[LightGBM] [Info] Number of positive: 32256, number of negative: 32256
+2024-11-21 18:54:51,961:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000779 seconds.
+2024-11-21 18:54:51,961:INFO:You can set `force_row_wise=true` to remove the overhead.
+2024-11-21 18:54:51,961:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2024-11-21 18:54:51,961:INFO:[LightGBM] [Info] Total Bins 1275
+2024-11-21 18:54:51,961:INFO:[LightGBM] [Info] Number of data points in the train set: 64512, number of used features: 5
+2024-11-21 18:54:51,962:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2024-11-21 18:54:52,283:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-11-21 18:54:52,283:INFO:create_model() successfully completed......................................
+2024-11-21 18:54:52,606:INFO:_master_model_container: 3
+2024-11-21 18:54:52,607:INFO:_display_container: 4
+2024-11-21 18:54:52,646:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-11-21 18:54:52,646:INFO:finalize_model() successfully completed......................................
+2024-11-21 18:54:53,067:INFO:Initializing predict_model()
+2024-11-21 18:54:53,067:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e15337f5090>)
+2024-11-21 18:54:53,067:INFO:Checking exceptions
+2024-11-21 18:54:53,067:INFO:Preloading libraries
+2024-11-21 18:54:53,541:INFO:Initializing predict_model()
+2024-11-21 18:54:53,541:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e151b5a4040>)
+2024-11-21 18:54:53,542:INFO:Checking exceptions
+2024-11-21 18:54:53,542:INFO:Preloading libraries
+2024-11-21 18:54:53,544:INFO:Set up data.
+2024-11-21 18:54:53,560:INFO:Set up index.
+2024-11-21 19:09:25,235:INFO:Initializing predict_model()
+2024-11-21 19:09:25,236:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e15073ed990>)
+2024-11-21 19:09:25,236:INFO:Checking exceptions
+2024-11-21 19:09:25,236:INFO:Preloading libraries
+2024-11-21 19:09:25,244:INFO:Set up data.
+2024-11-21 19:09:25,268:INFO:Set up index.
+2024-11-21 19:09:42,072:INFO:Initializing predict_model()
+2024-11-21 19:09:42,072:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e1530f7b760>)
+2024-11-21 19:09:42,077:INFO:Checking exceptions
+2024-11-21 19:09:42,077:INFO:Preloading libraries
+2024-11-21 19:09:42,085:INFO:Set up data.
+2024-11-21 19:09:42,150:INFO:Set up index.
+2024-11-21 19:48:39,630:INFO:Initializing predict_model()
+2024-11-21 19:48:39,630:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e15310563b0>)
+2024-11-21 19:48:39,631:INFO:Checking exceptions
+2024-11-21 19:48:39,631:INFO:Preloading libraries
+2024-11-21 19:48:39,654:INFO:Set up data.
+2024-11-21 19:48:39,718:INFO:Set up index.
+2024-11-21 19:49:22,060:INFO:Initializing save_model()
+2024-11-21 19:49:22,060:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), model_name=../models/pycaret_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-11-21 19:49:22,060:INFO:Adding model into prep_pipe
+2024-11-21 19:49:22,060:WARNING:Only Model saved as it was a pipeline.
+2024-11-21 19:51:23,869:INFO:Initializing predict_model()
+2024-11-21 19:51:23,869:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7e151bcdb820>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=7146, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7e151bb96710>)
+2024-11-21 19:51:23,869:INFO:Checking exceptions
+2024-11-21 19:51:23,869:INFO:Preloading libraries
+2024-11-21 19:51:23,876:INFO:Set up data.
+2024-11-21 19:51:23,945:INFO:Set up index.
+2024-11-21 19:52:09,114:INFO:Initializing save_model()
+2024-11-21 19:52:09,114:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), model_name=pycaret_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-11-21 19:52:09,114:INFO:Adding model into prep_pipe
+2024-11-21 19:52:09,114:WARNING:Only Model saved as it was a pipeline.
+2024-11-21 19:52:09,197:INFO:pycaret_model.pkl saved in current working directory
+2024-11-21 19:52:09,247:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                random_state=7146, reg_alpha=0.0,
+                                reg_lambda=0.0, subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-11-21 19:52:09,247:INFO:save_model() successfully completed......................................
