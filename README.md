@@ -41,4 +41,17 @@ Este projeto aborda a construção de um pipeline completo de modelagem preditiv
    ```bash
    git clone https://github.com/ohallao/final_project-data_scientist.git
    cd final_project-data_scientist
-
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+3. Execute a aplicação:
+   ```bash
+   streamlit run Streamlits/projeto_final.py
+4. Faça o upload de um arquivo .csv para realizar as previsões.
+   
+## **Tecnologias Utilizadas**
+- Python: Desenvolvimento de scripts e pipelines.
+- Streamlit: Interface web interativa.
+- PyCaret: Treinamento e avaliação de modelos.
+- Sklearn: Pré-processamento e modelagem.
+- Pandas/Numpy: Manipulação de dados.
