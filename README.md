@@ -33,10 +33,7 @@ Este projeto aborda a construção de um pipeline completo de modelagem preditiv
 - Aplicação disponível no arquivo `projeto_final.py`.
 - Permite **carregar bases de dados** e **gerar previsões** exportadas em planilhas.
 
-<video width="600" controls>
-  <source src="https://github.com/ohallao/final_project-data_scientist/blob/680ca31455dc085f30f8ba52deff50032b41bf29/Streamlit_Projeto_Final.webm" type="video/webm">
-  Seu navegador não suporta a reprodução de vídeos.
-</video>
+[![Assistir ao vídeo](https://via.placeholder.com/600x400.png?text=Assistir+ao+vídeo)](https://github.com/ohallao/final_project-data_scientist/blob/680ca31455dc085f30f8ba52deff50032b41bf29/Streamlit_Projeto_Final.webm)
 ---
 
 ## **Como Executar**
